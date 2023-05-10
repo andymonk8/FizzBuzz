@@ -1,4 +1,4 @@
-//get starting values from the scree
+//get starting values from the screen
 //Controller Function
 
 function getValues() {
@@ -7,7 +7,7 @@ function getValues() {
   let buzzValue = document.getElementById("buzzValue").value;
   let customValue = document.getElementById("customValue").value;
 
-  // parse the values in to integers
+  // parse the values into integers
   fizzValue = parseInt(fizzValue);
   buzzValue = parseInt(buzzValue);
   customValue = parseInt(customValue);
@@ -50,11 +50,21 @@ function generateFizzBuzz(fizzValue, buzzValue, customValue) {
 }
 
 function displayFizzBuzz(numbers) {
-  let className = "even";
+  let className = "";
   let templateRows = "";
 
   for (let i = 0; i < numbers.length; i++) {
     let number = numbers[i];
+
+    if (number == "FizzBuzz") {
+      className = "FizzBuzz";
+    } else if (number == "Fizz") {
+      className = "Fizz";
+    } else if (number == "Buzz") {
+      className = "Buzz";
+    } else {
+      className = "";
+    }
 
     if (i % 10 == 0) {
       templateRows += "<tr>";

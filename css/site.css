@@ -85,3 +85,18 @@ footer{
   box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
   object-fit: cover;
 }
+
+.Fizz {
+  background-color: lightblue !important;
+  font-weight: bolder !important;
+}
+
+.Buzz {
+  background-color: lightgreen !important;
+  font-weight: bolder !important;
+}
+
+.FizzBuzz {
+  background-color: orange !important;
+  font-weight: bolder !important;
+}
